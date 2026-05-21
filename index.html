@@ -1094,11 +1094,7 @@
             </div>
 
             <p style="font-style: italic; color: var(--text-dim); background: #f9f9f9; padding: 10px; border-left: 3px solid var(--brand-main); margin-bottom: 1rem;"
-                id="cve-recomendacion">
-                Recomendación del sistema...
-            </p>
-
-            <div style="display: flex; gap: 2rem;">
+                id="cve-r            <div style="display: flex; gap: 2rem;">
                 <div style="flex: 1;">
                     <h3 style="color: var(--brand-main); font-size: 1rem; text-transform: uppercase;">Retos Completados
                     </h3>
@@ -1129,7 +1125,13 @@
         </div>
     </div>
 
+    <!-- Botón Flotante Pantalla Completa -->
+    <button onclick="toggleFullScreen()" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; background: var(--brand-dark); color: white; border: none; border-radius: 50%; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" title="Agrandar pantalla">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>
+        </svg>
+    </button>
+
     <script src="js/app.js"></script>
 </body>
-
 </html>

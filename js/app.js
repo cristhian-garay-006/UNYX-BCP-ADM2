@@ -579,3 +579,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// =============================================
+// FULLSCREEN
+// =============================================
+function toggleFullScreen() {
+    if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(err => {
+            console.error(`Error al intentar habilitar pantalla completa: ${err.message} (${err.name})`);
+        });
+    } else {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        }
+    }
+}
